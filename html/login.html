@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Login Form</title>
+
+	<!-- <link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-login.css"> -->
+  <link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="../css/pokemon_css.css">
+
+</head>
+<body>
+    <div class="main-content-login">
+
+        <div id="login-form" class="form-login" method="post" action="#">
+
+            <div class="form-log-in-with-email">
+
+                <div class="form-white-background">
+
+                    <div class="form-title-row">
+                        <h1>Log in</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input id="email" type="email" name="email">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input id="password" type="password" name="password">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button id="login" type="submit">Log in</button>
+                    </div>
+
+                </div>
+
+                <!-- <a href="#" class="form-forgotten-password">Forgotten password &middot;</a>
+                <a href="#" class="form-create-an-account">Create an account &rarr;</a> -->
+            </div>
+
+        </div>
+
+				<div id="title_wrapper">
+	 			<div id="title_bar">
+					<label id='welcome' for="Welcome"><h4></h4></label>
+	 				<label id='title' for="Pokedex"><h4></h4></label>
+
+	 			</div>
+		 	</div>
+
+			<!-- <div id='charizard-2'>
+				<img src="charizard.png" alt="Charizard" style="width:280px;height:250px;">
+			</div> -->
+	 	<div id="content-container" class="content-container grid-wrapper">
+
+	 		<div class="form-container">
+				<div id='charizard'>
+					<img src="charizard-fly.png" alt="Charizard" style="width:280px;height:250px;">
+				</div>
+
+
+	 			<div id="myForm" class="pure-form pure-form-aligned">
+	 				<fieldset>
+ 					<div class="pure-control-group">
+ 						<label for="name">Name</label>
+ 						<input id="name" type="text" placeholder="Pokemon Name">
+ 					</div>
+
+ 					<div class="pure-control-group">
+ 						<label for="gender">Gender</label>
+ 						<input id="gender" type="text" placeholder="Male/Female">
+ 					</div>
+
+ 					<div class="pure-control-group">
+ 						<label for="type">Type</label>
+ 						<input id="type" type="text" placeholder="Water, Fire, Grass...">
+ 					</div>
+
+ 					<div class="pure-control-group">
+ 						<label for="size">Size</label>
+ 						<input id="size" type="text" placeholder="XL, L, M, S">
+ 					</div>
+
+ 					<div class="pure-control-group">
+ 						<label for="strength">Strength</label>
+ 						<input id="strength" type="text" placeholder="Ground, Electric, Fighting...">
+ 					</div>
+
+ 					<div class="pure-control-group">
+ 						<label for="weakness">Weakness</label>
+ 						<input id="weakness" type="text" placeholder="Bug, Poison, Ghost...">
+ 					</div>
+
+ 					<div class="pure-controls">
+ 						<button type="submit" id="submit_button" class="pure-button pure-button-primary">Add Pokemon</button>
+ 					</div>
+
+ 				</fieldset>
+	 				<div class="colset">
+	 				<div class="col table-frame">
+	 				<div class="table-wrap">
+	 					<div class="table-disabled" style="visibility: hidden;">
+	 					</div>
+	 					<table id="pokedex" class="data-table">
+	 						<thead>
+	 							<tr id="table_row">
+	 								<th class="sorting">
+	 									<div class="wrap">ID
+	 									</div>
+	 								<th class="sorting" data-sort="string">
+	 									<div class="wrap">Name
+	 									</div>
+	 								</th>
+	 								<th class="sorting" data-sort="string">
+	 									<div class="wrap">Gender
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Type
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Size
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Strength
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Weakness
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Edit
+	 									</div>
+	 								</th>
+	 								<th class="sorting">
+	 									<div class="wrap">Delete
+	 									</div>
+	 								</th>
+	 						</thead>
+	 						<tbody id="t-body">
+	 						</tbody>
+	 					</table>
+	 				</div>
+	 				</div>
+	 				</div>
+	 			</div>
+				<div id='snorlax'>
+					<img src="snorlax.png" alt="Snorlax" style="width:298px;height:217px;">
+		 		</div>
+
+				<div id='pika'>
+					<img src="pika.png" alt="Pikachu" style="width:200px;height:170px;">
+				</div>
+
+
+	 	</div>
+	 	<div id="myModal" class="modal">
+	 		<div class="modal-content">
+	 			<span id="close">x</span>
+	 			<!-- <fieldset> -->
+	 				<div class="modal-group-name">
+	 					<label for="name">Name</label>
+	 					<input id="m-name" type="text">
+	 				</div>
+
+	 				<div class="modal-group-gender">
+	 					<label for="gender">Gender</label>
+	 					<input id="m-gender" type="text">
+	 				</div>
+
+	 				<div class="modal-group-type">
+	 					<label for="type">Type</label>
+	 					<input id="m-type" type="text">
+	 				</div>
+
+	 				<div class="modal-group-size">
+	 					<label for="size">Size</label>
+	 					<input id="m-size" type="text">
+	 				</div>
+
+	 				<div class="modal-group-strength">
+	 					<label for="strength">Strength</label>
+	 					<input id="m-strength" type="text">
+	 				</div>
+
+	 				<div class="modal-group-weakness">
+	 					<label for="weakness">Weakness</label>
+	 					<input id="m-weakness" type="text">
+	 				</div>
+
+	 				<div class="pure-controls">
+	 					<button type="submit" id="edit_button" class="pure-button pure-button-primary">Edit</button>
+	 				</div>
+	 <!-- 			</fieldset>
+	  -->		</div>
+	 	</div>
+    </div>
+		<script src="../Javascript/login.js"></script>
+</body>
+
+</html>
